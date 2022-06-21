@@ -1,7 +1,7 @@
 ## Describe your changes
 <!--- Why is this change required? What problem does it solve? -->
 
-## How Has This Been Tested?
+## How has this been tested?
 <!--- Please describe in detail how you tested your changes. -->
 
 ## Screenshots (if appropriate):
