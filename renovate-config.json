@@ -4,6 +4,15 @@
   "schedule": ["before 8am every sunday"],
   "semanticCommits": "enabled",
   "reviewers": ["team:core"],
+  "regexManagers": [
+    {
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["FROM node:(?<currentValue>.*?)-alpine\\n"],
+      "depNameTemplate": "node",
+      "datasourceTemplate": "node",
+      "versioningTemplate": "node"
+    }
+  ],
   "packageRules": [
     {
       "groupName": "(non-major) devDependencies",
@@ -25,6 +34,11 @@
       "updateTypes": ["major"],
       "automerge": "false",
       "schedule": ["before 7am on Friday"]
+    },
+    {
+      "matchPackageNames": ["node"],
+      "matchManagers": ["dockerfile"],
+      "enabled": false
     }
   ]
 }
