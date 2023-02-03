@@ -15,27 +15,6 @@
   ],
   "packageRules": [
     {
-      "groupName": "(non-major) devDependencies",
-      "automerge": "false",
-      "depTypeList": ["devDependencies"],
-      "updateTypes": ["patch", "minor"],
-      "schedule": ["before 7am on Friday"]
-    },
-    {
-      "groupName": "(non-major) dependencies",
-      "depTypeList": ["dependencies"],
-      "updateTypes": ["patch", "minor"],
-      "automerge": "false",
-      "schedule": ["before 7am on Friday"]
-    },
-    {
-      "groupName": "(major) devDependencies & dependencies",
-      "depTypeList": ["dependencies", "devDependencies"],
-      "updateTypes": ["major"],
-      "automerge": "false",
-      "schedule": ["before 7am on Friday"]
-    },
-    {
       "matchPackageNames": ["node"],
       "matchManagers": ["dockerfile"],
       "enabled": false
