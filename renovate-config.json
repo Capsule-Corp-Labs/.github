@@ -19,5 +19,6 @@
       "matchManagers": ["dockerfile"],
       "enabled": false
     }
-  ]
+  ],
+  "rangeStrategy": "update-lockfile"
 }
