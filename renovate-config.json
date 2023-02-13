@@ -18,6 +18,10 @@
       "matchPackageNames": ["node"],
       "matchManagers": ["dockerfile"],
       "enabled": false
+    },
+    {
+      "matchPackageNames": ["^@walletconnect"],
+      "enabled": false
     }
   ],
   "rangeStrategy": "update-lockfile"
