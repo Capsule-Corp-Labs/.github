@@ -20,7 +20,7 @@
       "enabled": false
     },
     {
-      "matchPackageNames": ["^@walletconnect.*"],
+      "matchPackagePatterns": ["^@walletconnect/.*"],
       "enabled": false
     }
   ],
